@@ -1,6 +1,22 @@
+$sarya-color-lighter: #fff5ef;
+$sarya-color-light: #fca76f;
+$sarya-color: #ff6704;
+$sarya-color-dark: #963c00;
+$sarya-color-darker: #5a2400;
+
+html, body {
+    margin: 0px;
+}
+a {
+    color: $sarya-color;
+}
+
 .sarya {
     &-card {
         height: 250px;
+        background-color: white;
+        border-left: 4px solid $sarya-color;
+
         cursor: pointer;
         &:hover {
             box-shadow: 0px 0px 6px #999999;
@@ -10,7 +26,7 @@
         font-size: 24px;
         & a {
             font-weight: bolder;
-            color: #333333;
+            color: $sarya-color;
         }
     }
     &-banner {
@@ -24,7 +40,6 @@
         background-color: #333333;
         color: white;
         & a {
-            color: white;
             &:hover {
                 text-decoration: underline;
             }
@@ -37,7 +52,8 @@
             font-weight: 500;
 
             &:hover {
-                background-color: #333333;
+                background-color: $sarya-color;
+                color: white;
                 cursor: pointer;
                 & > a { 
                     color: white;
@@ -46,9 +62,18 @@
         }
     }
     &-table {
+        background-color: transparent;
         tr {
+            border-left: 4px solid $sarya-color;
             td { font-size: 14px; }
         }
+    }
+
+    &-color {
+        color: $sarya-color;
+    }
+    &-background-color {
+        background-color: $sarya-color;
     }
 }
 
@@ -56,12 +81,40 @@
     &-mobile-reverse {
         flex-direction: row-reverse;
     }
+    &-sarya {
+        color: $sarya-color;
+        &-lighter { color: $sarya-color-lighter; }
+        &-light { color: $sarya-color-light; }
+        &-dark { color: $sarya-color-dark; }
+        &-darker { color: $sarya-color-darker; }
+        &-background {
+            &-lighter { background-color: $sarya-color-lighter; }
+            &-light { background-color: $sarya-color-light; }
+            &-dark { background-color: $sarya-color-dark; }
+            &-darker { background-color: $sarya-color-darker; }
+        }
+    }
 }
 
 @media screen and (min-width: 769px) {
     .on {
         &-desktop-right {
             text-align: right;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sarya {
+        &-card {
+            height: auto;
+        }
+        &-table {
+            tr {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0px;
+            }
         }
     }
 }
