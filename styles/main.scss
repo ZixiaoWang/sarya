@@ -94,6 +94,9 @@ a {
             &-darker { background-color: $sarya-color-darker; }
         }
     }
+    &-align {
+        &-center { align-items: center; }
+    }
 }
 
 @media screen and (min-width: 769px) {

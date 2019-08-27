@@ -27,13 +27,13 @@
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item sarya-navbar-item">
-                        <a href="#about">Features</a>
+                        <a data-for="features">Features</a>
                     </div>
                     <div class="navbar-item sarya-navbar-item">
-                        <a href="#about">Products</a>
+                        <a data-for="products">Products</a>
                     </div>
                     <div class="navbar-item sarya-navbar-item">
-                        <a href="#about">Trading Screen</a>
+                        <a data-for="tradingscreen">Trading Screen</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="features">
         <div class="container">
             <div class="columns">
                 <div class="column is-4">
@@ -97,12 +97,12 @@
         </div>
     </section>
 
-    <section class="hero is-medium is-sarya-background-lighter">
+    <section class="hero is-medium is-sarya-background-lighter" id="products">
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
                     <div class="column is-12 has-text-centered">
-                        <h3 class="title is-3">Porducts</h3>
+                        <h3 class="title is-3">Products</h3>
                     </div>
                 </div>
                 <br>
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="hero is-medium">
+    <section class="hero is-medium" id="tradingscreen">
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
@@ -194,7 +194,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="columns">
+                <div class="columns is-align-center">
                     <div class="column is-7">
                         <figure class="image is-16by9">
                             <img src="http://placehold.it/800x450" alt="Image">
@@ -230,7 +230,7 @@
                     </div>
                 </div>
                 <br><br>
-                <div class="columns is-mobile-reverse">
+                <div class="columns is-mobile-reverse is-align-center">
                     <div class="column is-7">
                         <figure class="image is-16by9">
                             <img src="http://placehold.it/800x450" alt="Image">
@@ -253,7 +253,7 @@
                     </div>
                 </div>
                 <br><br>
-                <div class="columns">
+                <div class="columns is-align-center">
                     <div class="column is-7">
                         <figure class="image is-16by9">
                             <img src="http://placehold.it/800x450" alt="Image">
@@ -334,6 +334,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const scrollTo = (event) => {
+            let item = event.target;
+            let target_id = item.dataset.for;
+            let target = document.getElementById(target_id);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' })
+            }
+        }
+        window.addEventListener('load', () => {
+            document
+                .querySelectorAll('.sarya-navbar-item')
+                .forEach(navItem => {
+                    navItem.addEventListener('click', scrollTo)
+                })
+        })
+    </script>
 </body>
 
 </html>
