@@ -14,7 +14,7 @@
 <body class="has-navbar-fixed-top">
     <nav class="navbar is-fixed-top sarya-navbar">
         <div class="container">
-            <div class="navbar-brand">
+            <div class="navbar-brand sarya-navbar-brand">
                 <div class="navbar-item">
                     <img src="./assets/images/sarya_logo.png" alt="Sarya Fintech">
                 </div>
@@ -45,8 +45,8 @@
             <div class="container">
                 <div class="columns">
                     <div class="column is-8 is-offset-2 has-text-centered">
-                        <h1 class="title is-1 sarya-color">Sarya Finsoft</h1>
-                        <p>
+                        <h1 class="title is-1 sarya-color sarya-banner-title" id="banner_title">Sarya Finsoft</h1>
+                        <p class="sarya-banner-description" id="banner_description">
                             SARYA FINSOFT is a Hong Kong fintech start-up company committed to 
                             revolutionize the way of trading and risk management. We provide Low-latency 
                             Trading Solutions for market makers and proprietary traders, and develop automation 
@@ -415,6 +415,13 @@
                 .addEventListener('click', () => { siema.next(); initTimer(); });
 
             initTimer();
+
+            const title = document.getElementById('banner_title');
+            const description = document.getElementById('banner_description');
+            if (title && description) {
+                title.classList.add('is-loaded');
+                setTimeout(() => { description.classList.add('is-loaded') }, 50);
+            }
         })
     </script>
 </body>

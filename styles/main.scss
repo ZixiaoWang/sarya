@@ -35,6 +35,17 @@ a {
     &-banner {
         background-color: #333333;
         color: white;
+        &-title,
+        &-description {
+            transform: translateY(30px);
+            opacity: 0.5;
+            transition: all .7s ease-in-out;
+
+            &.is-loaded {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
     }
     &-products {
         background-color: #f4f4f4;
@@ -115,6 +126,7 @@ a {
     }
     &-navbar {
         box-shadow: 2px 0px 4px #333333;
+
         &-item {
             color: #333333;
             font-weight: 500;
@@ -125,6 +137,16 @@ a {
                 cursor: pointer;
                 & > a { 
                     color: white;
+                }
+            }
+        }
+
+        &-brand {
+            & > .navbar-item {
+                padding: 0px .75rem;
+                & > img {
+                    max-height: 2.75rem;
+                    height: 2.75rem;
                 }
             }
         }
