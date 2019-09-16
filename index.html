@@ -47,9 +47,10 @@
                     <div class="column is-8 is-offset-2 has-text-centered">
                         <h1 class="title is-1 sarya-color">Sarya Finsoft</h1>
                         <p>
-                            SARYA FINSOFT is a Hong Kong fintech start-up company committed to revolutionize the way of
-                            trading and risk management.
-                            We provide Low-latency Trading Solutions for market makers and proprietary traders
+                            SARYA FINSOFT is a Hong Kong fintech start-up company committed to 
+                            revolutionize the way of trading and risk management. We provide Low-latency 
+                            Trading Solutions for market makers and proprietary traders, and develop automation 
+                            and sophisticated tools to build advanced systems for data analysis and market trading.
                         </p>
                     </div>
                 </div>
@@ -212,7 +213,7 @@
                         <div class="columns is-multiline">
                             <div class="column is-6">
                                 <figure class="image is-16by9">
-                                    <img src="http://placehold.it/800x450" alt="Image">
+                                    <img src="/assets/images/prop_ws.png" alt="Image">
                                 </figure>
                             </div>
                             <div class="column is-6">
@@ -233,21 +234,30 @@
                                         <li>In-place quick order cancellations (one by one or all)</li>
                                     </ul>
                                 </div>
-                                <div class="field">
-                                    <label class="label">Market Specifics Management</label>
-                                    <ul>
-                                        <li>Market-Specific Order Types</li>
-                                        <li>Market-Specific Conditional Orders</li>
-                                        <li>Market-Specific Validities</li>
-                                        <li>Market Mandatory Information (Member, Account, Trader, etc).</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         <div class="columns is-multiline">
+                                <div class="column is-6">
+                                    <figure class="image is-16by9">
+                                        <img src="/assets/images/easy-to-use-menu.PNG" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="column is-6">
+                                    <div class="field">
+                                        <label class="label">Market Specifics Management</label>
+                                        <ul>
+                                            <li>Market-Specific Order Types</li>
+                                            <li>Market-Specific Conditional Orders</li>
+                                            <li>Market-Specific Validities</li>
+                                            <li>Market Mandatory Information (Member, Account, Trader, etc).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="columns is-multiline">
                             <div class="column is-6">
                                 <figure class="image is-16by9">
-                                    <img src="http://placehold.it/800x450" alt="Image">
+                                    <img src="/assets/images/orderentry-protection.PNG" alt="Image">
                                 </figure>
                             </div>
                             <div class="column is-6">
@@ -269,7 +279,7 @@
                         <div class="columns is-multiline">
                             <div class="column is-6">
                                 <figure class="image is-16by9">
-                                    <img src="http://placehold.it/800x450" alt="Image">
+                                    <img src="/assets/images/marketex.PNG" alt="Image">
                                 </figure>
                             </div>
                             <div class="column is-6">
@@ -300,7 +310,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sarya-siema-thumbnail"></div>
+                    <div class="sarya-siema-indicators-container">
+                        <div class="sarya-siema-indicators"></div>
+                    </div>
                     <div class="sarya-siema-prev"></div>
                     <div class="sarya-siema-next"></div>
                 </div>
@@ -364,21 +376,29 @@
             }
         }
         window.addEventListener('load', () => {
-            const siema = new Siema({
+            let siemaTimer;
+            let siema = new Siema({
                 selector: '.siema',
-                duration: 300,
+                duration: 500,
                 easing: 'ease-out',
                 loop: true,
                 onChange: () => {
                     const index = siema.currentSlide;
-                    const left = index * 33.333 + '%';
-                    const thumbnail = document.querySelector('.sarya-siema-thumbnail');
+                    const left = index * 25 + '%';
+                    const indicators = document.querySelector('.sarya-siema-indicators');
 
-                    if (thumbnail) {
-                        thumbnail.style.left = left;
+                    if (indicators) {
+                        indicators.style.left = left;
                     }
                 }
             });
+
+            const initTimer = () => {
+                clearInterval(siemaTimer);
+                siemaTimer = setInterval(() => {
+                    siema.next();
+                }, 3000);
+            }
 
             document
                 .querySelectorAll('.sarya-navbar-item')
@@ -388,11 +408,13 @@
 
             document
                 .querySelector('.sarya-siema-prev')
-                .addEventListener('click', () => { siema.prev(); });
+                .addEventListener('click', () => { siema.prev(); initTimer(); });
 
             document
                 .querySelector('.sarya-siema-next')
-                .addEventListener('click', () => { siema.next(); })
+                .addEventListener('click', () => { siema.next(); initTimer(); });
+
+            initTimer();
         })
     </script>
 </body>
