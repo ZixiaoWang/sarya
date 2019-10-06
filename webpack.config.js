@@ -1,14 +1,15 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const path = require('path');
 
 module.exports = () => {
     return {
         entry: './main.tsx',
         output: {
-            filename: 'index.js',
-            path: path.resolve(__dirname, './dist')
+            filename: 'index.min.js',
+            path: path.resolve(__dirname, '.')
         },
         module: {
             rules: [
@@ -16,7 +17,7 @@ module.exports = () => {
                 {
                     test: /\.scss?$/,
                     use: [
-                        { loader: MiniCSSExtractPlugin.loader },
+                        'style-loader',
                         'css-loader',
                         { loader: 'sass-loader', options: { sourceMap: false } }
                     ],
@@ -32,10 +33,13 @@ module.exports = () => {
             }
         },
         plugins: [
-            new CleanWebpackPlugin(),
-            new MiniCSSExtractPlugin({
-                filename: 'main.css'
-            })
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, './src/template.html'),
+                filename: './index.html',
+                inlineSource: '.(js|css)$',
+                title: 'Sarya Fintech'
+            }),
+            new HtmlWebpackInlineSourcePlugin()
         ],
         target: 'web',
         optimization: {
