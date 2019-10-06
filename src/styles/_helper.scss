@@ -5,4 +5,11 @@
         &-color { color: $sarya-color !important; }
         &-bgcolor { background-color: $sarya-color !important; }
     }
+
+    &-gap {
+        + .has-gap { margin-left: 6px; }
+    }
+    &-distance {
+        + .has-distance { margin-left: 12px; }
+    }
 }
