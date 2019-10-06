@@ -6,7 +6,15 @@ export class NewsPage extends Component {
 
         return (
             <section className="hero is-medium sarya-banner" style={`background-image: ${ backgroundImage }`}>
-                <div className="hero-body"></div>
+                <div className="hero-body">
+                    <div className="container">
+                        <div className="columns">
+                            <div className="column is-12">
+                                <h3 className="title is-3">News</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         )
     }

@@ -11,7 +11,7 @@ export class TechnologyPage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <h1 className="title is-1">Technology</h1>
+                                    <h3 className="title is-3">Technology</h3>
                                 </div>
                             </div>
                         </div>
@@ -48,10 +48,11 @@ export class TechnologyPage extends Component {
                         </div>
                     </div>
                 </section>
+                <hr/>
                 <section className="section">
                     <div className="container">
                         <div className="columns">
-                            <div className="column is-9 is-offset-3">
+                            <div className="column is-9">
                                 <h3 className="title is-3">LMAX Disruptor Pattern</h3>
                                 <p>
                                     SARYA applies LMAX Disruptor pattern in order to improve
@@ -61,7 +62,7 @@ export class TechnologyPage extends Component {
                             </div>
                         </div>
                         <div className="columns">
-                            <div className="column is-4 is-offset-3">
+                            <div className="column is-4">
                                 <figure className="image is-16by9">
                                     <img src="http://placehold.it/400x300" alt="DPDK" />
                                 </figure>

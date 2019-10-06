@@ -16,19 +16,28 @@ export class ContactPage extends Component {
                                 <h4 class="title is-3">Contact Us</h4>
                                 <table className="table">
                                     <tr>
-                                        <th>Address</th>
+                                        <th>
+                                            <i className="ion ion-md-home has-gap"></i>
+                                            <span className="has-gap">Address</span>
+                                        </th>
                                         <td>
                                             <a href="#">Room 609, Yip Fung Building 18 D’Aguilar Street, Central, Hong Ko</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>Email</th>
+                                        <th>
+                                            <i className="ion ion-md-mail has-gap"></i>
+                                            <span className="has-gap">Email</span>
+                                        </th>
                                         <td>
                                             <a href="mailto:sales@saryafinsoft.com">sales@saryafinsoft.com</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>Website</th>
+                                        <th>
+                                            <i className="ion ion-md-globe has-gap"></i>
+                                            <span className="has-gap">Website</span>
+                                        </th>
                                         <td>
                                             <a href="https://www.saryafinsoft.com" target="_blank">www.saryafinsoft.com</a>
                                         </td>
@@ -38,6 +47,7 @@ export class ContactPage extends Component {
                         </div>
                     </div>
                 </section>
+                <hr/>
             </Fragment>
         )
     }
