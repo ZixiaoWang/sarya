@@ -1,0 +1,16 @@
+@import './variables';
+
+.sarya {
+    &-navbar {
+
+    }
+
+    &-subnavbar {
+        background-color: #333333;
+
+        & .navbar-link,
+        & .navbar-item {
+            color: $sarya-color;
+        }
+    }
+}

@@ -2,20 +2,33 @@ import { h, Component, Fragment } from 'preact';
 
 export class HomePage extends Component {
     render() {
+        const backgroundImage: string = 'url(http://placehold.it/900x500)';
         return (
             <Fragment>
-                <section className="hero is-medium">
+                <section className="hero is-medium sarya-banner" style={`background-image: ${ backgroundImage }`}>
                     <div className="hero-body">
-                        
+                        <div className="container">
+                            <div className="columns">
+                                <div className="column is-12">
+                                    <h1 className="title is-1 sarya-banner-title">Sarya Fintech</h1>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section className="section">
                     <div className="container">
                         <div className="columns">
-                            <div className="column is-12">
-                                <h2 className="title is-2">Sarya Fintech</h2>
+                            <div className="column is-9">
+                                <h3 className="title is-3">About</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At vitae recusandae libero, dolorem velit possimus ipsam amet ipsum commodi aspernatur perspiciatis distinctio fuga magnam vero veniam minus eum expedita aut ab ipsa! Esse, commodi possimus hic aspernatur quas libero cum dolorem error molestiae earum debitis.
+                                    <strong>SARYA FINSOFT</strong> is a Hong Kong fintech start-up company 
+                                    committed to revolutionize the way of trading and risk 
+                                    management. We provide High Frequency Trading Solutions 
+                                    for market makers and proprietary traders to trade with an 
+                                    edge. We are passionate to apply latest trading technologies 
+                                    and advanced technics to enable our clients with low latency 
+                                    market access, ease of use and high automation.
                                 </p>
                             </div>
                         </div>

@@ -3,7 +3,6 @@ import { Router } from 'preact-router';
 
 import { 
     HomePage, 
-    AboutPage,
     TechnologyPage,
     ProductPage,
     NewsPage,
@@ -16,7 +15,6 @@ export class AppRouter extends Component {
         return (
             <Router>
                 <HomePage path="/" />
-                <AboutPage path="/about" />
                 <TechnologyPage path="/technology" />
                 <ProductPage path="/product" />
                 <NewsPage path="/news" />

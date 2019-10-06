@@ -1,4 +1,3 @@
-export * from './about.page';
 export * from './technology.page';
 export * from './product.page';
 export * from './news.page';

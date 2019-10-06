@@ -1,0 +1,10 @@
+@import './helper';
+@import './navbar';
+@import "./footer";
+@import './banner';
+
+a { color: $sarya-color; }
+
+.sarya {
+    padding-bottom: 45px;
+}
