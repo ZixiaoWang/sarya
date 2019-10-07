@@ -13,7 +13,7 @@ export class MarketMakingPage extends Component {
                                     <nav className="breadcrumb sarya-breadcrumb" aria-label="breakcrumbs">
                                         <ul>
                                             <li>
-                                                <Link href="/sarya/product">
+                                                <Link href="/product">
                                                     <i className="ion ion-md-arrow-back has-gap"></i>
                                                     <span className="has-gap">Product</span>
                                                 </Link>
