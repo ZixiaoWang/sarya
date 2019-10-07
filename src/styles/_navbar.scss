@@ -27,23 +27,45 @@
             }
         }
 
-        & .navbar-item:hover,
-        & .navbar-item:focus {
-            background-color: $sarya-color;
-            color: white;
-            & .navbar-link {
+        @media screen and (min-width: 1024px) {
+            & .navbar-item:focus,
+            & .navbar-item:hover {
                 background-color: $sarya-color;
                 color: white;
-                &:after {
-                    border-color: white;
+                & .navbar-link {
+                    background-color: $sarya-color;
+                    color: white;
+                    &:after {
+                        border-color: white;
+                    }
                 }
             }
         }
     }
 
     @media screen and (max-width: 1023px) {
-        .sarya-subnavbar {
-            display: none;
+        .sarya {
+            &-navbar {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+            }
+            &-subnavbar {
+                display: none;
+                position: fixed;
+                top: 52px;
+                left: 0px;
+                width: 100%;
+
+                &.is-open {
+                    display: block;
+                }
+
+                & .navbar-dropdown {
+                    background-color: black;
+                }
+            }
         }
     }
 }

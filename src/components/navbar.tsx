@@ -1,28 +1,52 @@
 import { h, Component, Fragment } from 'preact';
 import { Link } from 'preact-router';
 
-export class NavbarComponent extends Component {
+export class NavbarComponent extends Component<any, any> {
+
+    public state: any = { 
+        isSubnavOpen: false 
+    }
+
+    toggleSubnav = () => {
+        this.setState({
+            isSubnavOpen: !this.state.isSubnavOpen
+        })
+    }
+
     render() {
+        let subnavClassName = `navbar sarya-subnavbar`;
+
+        if (this.state.isSubnavOpen) {
+            subnavClassName += ' is-open';
+        }
+
         return (
             <Fragment>
                 <nav className="navbar sarya-navbar">
                     <div className="container">
                         <div className="navbar-brand">
                             <div className="navbar-item">
-                                <img src="/assets/images/sarya_logo.png" alt="Sarya Fintech" />
+                                <img src="./assets/images/sarya_logo.png" alt="Sarya Fintech" />
                             </div>
                             <div className="navbar-item">
                                 <strong>Trading with an edge</strong>
                             </div>
                             <div className="navbar-burger">
-                                <button className="button">
-                                    <i className="ion ion-md-menu has-sarya-color"></i>
+                                <button className="button" onClick={ this.toggleSubnav }>
+                                    {
+                                        this.state.isSubnavOpen === false &&
+                                        <i className="ion ion-md-menu has-sarya-color"></i>
+                                    }
+                                    {
+                                        this.state.isSubnavOpen &&
+                                        <i className="ion ion-md-close has-sarya-color"></i>
+                                    }
                                 </button>
                             </div>
                         </div>
                     </div>
                 </nav>
-                <nav className="navbar sarya-subnavbar">
+                <nav className={ subnavClassName }>
                     <div className="container">
                         <div className="navbar-start">
                             <Link className="navbar-item" href="/">
