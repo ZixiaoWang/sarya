@@ -2,16 +2,48 @@
 
 .sarya {
     &-navbar {
-
+        box-shadow: 0px 4px 4px rgba(0,0,0, 0.2);
+        @media screen and (max-width: 1023px) {
+            & .navbar-burger {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 
     &-subnavbar {
         background-color: #333333;
-        box-shadow: inset 0px 4px 4px rgba(0,0,0, 0.6), 0px 4px 4px rgba(0,0,0, 0.4);
+        box-shadow: 0px 4px 4px rgba(0,0,0, 0.4);
 
         & .navbar-link,
         & .navbar-item {
             color: $sarya-color;
+        }
+
+        & .navbar-link {
+            &:after {
+                border-color: $sarya-color;
+            }
+        }
+
+        & .navbar-item:hover,
+        & .navbar-item:focus {
+            background-color: $sarya-color;
+            color: white;
+            & .navbar-link {
+                background-color: $sarya-color;
+                color: white;
+                &:after {
+                    border-color: white;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        .sarya-subnavbar {
+            display: none;
         }
     }
 }

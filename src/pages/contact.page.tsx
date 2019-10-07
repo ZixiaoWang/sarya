@@ -7,14 +7,21 @@ export class ContactPage extends Component {
         return (
             <Fragment>
                 <section className="hero is-medium sarya-banner" style={`background-image: ${backgroundImage}`}>
-                    <div className="hero-body"></div>
+                    <div className="hero-body">
+                        <div className="container">
+                            <div className="columns">
+                                <div className="column is-12">
+                                    <h3 class="title is-3">Contact Us</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section className="section" id="contact">
                     <div className="container">
                         <div className="columns">
                             <div class="column is-12">
-                                <h4 class="title is-3">Contact Us</h4>
-                                <table className="table">
+                                <table className="table sarya-table is-mobile">
                                     <tr>
                                         <th>
                                             <i className="ion ion-md-home has-gap"></i>
@@ -47,7 +54,6 @@ export class ContactPage extends Component {
                         </div>
                     </div>
                 </section>
-                <hr/>
             </Fragment>
         )
     }
