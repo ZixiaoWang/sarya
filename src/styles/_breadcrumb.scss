@@ -1,0 +1,7 @@
+@import './variables';
+
+.sarya {
+    &-breadcrumb {
+        & a { color: $sarya-color; }
+    }
+}

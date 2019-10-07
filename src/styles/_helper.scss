@@ -12,4 +12,11 @@
     &-distance {
         + .has-distance { margin-left: 12px; }
     }
+
+    &-padding {
+        &-left {  }
+        &-right {  }
+        &-top {  }
+        &-bottom {  }
+    }
 }

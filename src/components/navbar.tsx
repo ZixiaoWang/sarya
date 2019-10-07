@@ -9,7 +9,7 @@ export class NavbarComponent extends Component {
                     <div className="container">
                         <div className="navbar-brand">
                             <div className="navbar-item">
-                                <img src="./assets/images/sarya_logo.png" alt="Sarya Fintech" />
+                                <img src="/assets/images/sarya_logo.png" alt="Sarya Fintech" />
                             </div>
                         </div>
                         <div className="navbar-start">
@@ -23,31 +23,31 @@ export class NavbarComponent extends Component {
                     <div className="container">
                         <div className="navbar-brand"></div>
                         <div className="navbar-start">
-                            <Link className="navbar-item" href="/">
+                            <Link className="navbar-item" href="/sarya">
                                 <i className="ion ion-md-home has-gap"></i>
                                 <span className="has-gap">Home</span>
                             </Link>
-                            <Link className="navbar-item" href="/technology">
+                            <Link className="navbar-item" href="/sarya/technology">
                                 <i className="ion ion-md-flask has-gap"></i>
                                 <span className="has-gap">Technology</span>
                             </Link>
                             <div className="navbar-item has-dropdown is-hoverable">
-                                <Link className="navbar-link" href="/product">
+                                <Link className="navbar-link" href="/sarya/product">
                                     <i className="ion ion-md-trending-up has-gap"></i>
                                     <span className="has-gap">Products</span>
                                 </Link>
                                 <div class="navbar-dropdown is-boxed">
-                                    <Link className="navbar-item" href="/product/market-connectivity">Market Connectivity</Link>
-                                    <Link className="navbar-item" href="/product/manual-trading">Manual Trading</Link>
-                                    <Link className="navbar-item" href="/product/market-making">Market Making</Link>
-                                    <Link className="navbar-item" href="/product/strategy-trading">Strategy Trading</Link>
+                                    <Link className="navbar-item" href="/sarya/product/market-connectivity">Market Connectivity</Link>
+                                    <Link className="navbar-item" href="/sarya/product/manual-trading">Manual Trading</Link>
+                                    <Link className="navbar-item" href="/sarya/product/market-making">Market Making</Link>
+                                    <Link className="navbar-item" href="/sarya/product/strategy-trading">Strategy Trading</Link>
                                 </div>
                             </div>
-                            <Link className="navbar-item" href="/news">
+                            <Link className="navbar-item" href="/sarya/news">
                                 <i className="ion ion-md-text has-gap"></i>
                                 <span className="has-gap">News</span>
                             </Link>
-                            <Link className="navbar-item" href="/contact">
+                            <Link className="navbar-item" href="/sarya/contact">
                                 <i className="ion ion-md-call has-gap"></i>
                                 <span className="has-gap">Contacts</span>
                             </Link>

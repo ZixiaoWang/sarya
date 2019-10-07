@@ -10,10 +10,10 @@ export class MarketConnectivityPage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <nav className="breadcrumb" aria-label="breakcrumbs">
+                                    <nav className="breadcrumb sarya-breadcrumb" aria-label="breakcrumbs">
                                         <ul>
                                             <li>
-                                                <Link href="/product">
+                                                <Link href="/sarya/product">
                                                     <i className="ion ion-md-arrow-back has-gap"></i>
                                                     <span className="has-gap">Product</span>
                                                 </Link>
@@ -28,6 +28,32 @@ export class MarketConnectivityPage extends Component {
                                     <p>
                                         Native Gateways
                                     </p>
+                                </div>
+                            </div>
+                            <div className="columns">
+                                <div className="column is-12">
+                                    <div className="content">
+                                        <label className="label">TFEX (Thailand Futures Exchange)</label>
+                                        <ul>
+                                            <li>Certified since Feb 2019</li>
+                                            <li>Native EMAPI</li>
+                                            <li>Support all Order Types</li>
+                                            <li>Page by Page Quoting</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="columns">
+                                <div className="column is-12">
+                                    <div className="content">
+                                        <label className="label">SET (The Stock Exchange Of Thailand)</label>
+                                        <ul>
+                                            <li>Certification in progress</li>
+                                            <li>Native EMAPI</li>
+                                            <li>Support all Order Types</li>
+                                            <li>Page by Page Quoting</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
