@@ -28,7 +28,7 @@ export class ContactPage extends Component {
                                             <span className="has-gap">Address</span>
                                         </th>
                                         <td>
-                                            <a href="#">Room 609, Yip Fung Building 18 D’Aguilar Street, Central, Hong Ko</a>
+                                            <a href="#">Room 609, Yip Fung Building 18 D’Aguilar Street, Central, Hong Kong</a>
                                         </td>
                                     </tr>
                                     <tr>
