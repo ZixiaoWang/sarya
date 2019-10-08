@@ -29,7 +29,7 @@ export class NavbarComponent extends Component<any, any> {
                                 <img src="./assets/images/sarya_logo.png" alt="Sarya Fintech" />
                             </div>
                             <div className="navbar-item">
-                                <strong>Trading with an edge</strong>
+                                <strong className="is-bold has-sarya-color">TRADING WITH AN EDGE</strong>
                             </div>
                             <div className="navbar-burger">
                                 <button className="button" onClick={ this.toggleSubnav }>
