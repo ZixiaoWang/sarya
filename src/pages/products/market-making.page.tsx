@@ -25,7 +25,7 @@ export class MarketMakingPage extends Component {
                             <div className="columns">
                                 <div className="column is-9">
                                     <div className="content">
-                                        <h3 className="title has-text-black is-3">Market Connectivity</h3>
+                                        <h3 className="title has-text-black is-3">Market Making</h3>
                                         <p>
                                             Market Making view is integrated with market making, 
                                             underlying, order entry, market depth, public trades, 
