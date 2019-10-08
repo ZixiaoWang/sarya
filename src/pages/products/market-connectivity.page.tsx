@@ -24,7 +24,7 @@ export class MarketConnectivityPage extends Component {
                             </div>
                             <div className="columns">
                                 <div className="column is-9">
-                                    <h3 className="title is-3">Market Connectivity</h3>
+                                    <h3 className="title has-text-black is-3">Market Connectivity</h3>
                                     <p>
                                         Native Gateways
                                     </p>

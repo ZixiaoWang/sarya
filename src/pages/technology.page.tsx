@@ -2,7 +2,7 @@ import { h, Component, Fragment } from 'preact';
 
 export class TechnologyPage extends Component {
     render() {
-        const backgroundImage: string = 'url(http://placehold.it/900x500)';
+        const backgroundImage: string = 'url(./assets/banner/technology.banner.jpeg)';
 
         return (
             <Fragment>
@@ -11,7 +11,7 @@ export class TechnologyPage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <h3 className="title is-3">Technology</h3>
+                                    <h3 className="title has-text-black is-3">Technology</h3>
                                 </div>
                             </div>
                         </div>
@@ -22,15 +22,15 @@ export class TechnologyPage extends Component {
                         <div className="columns">
                             <div className="column is-9">
                                 <div className="content">
-                                    <h3 className="title is-3">DPDK</h3>
+                                    <h3 className="title has-text-black is-3">DPDK</h3>
                                     <p>
                                         The network latency control is one of the pillars
                                         for any HFT solutions. SARYA applies Intel proposed
                                         DPDK development kit to bypass Linux Kernel in order
                                         to improve our network latency.
                                 </p>
-                                    <figure className="image is-16by9">
-                                        <img src="http://placehold.it/800x450" alt="DPDK" />
+                                    <figure className="image">
+                                        <img src="./assets/webpage/technology/DPDK.png" alt="DPDK" />
                                     </figure>
                                     <ul className="is-size-6">
                                         <li>NIC driver runs in App’s user mode to avoid context switch and packet copy</li>
@@ -50,14 +50,14 @@ export class TechnologyPage extends Component {
                         <div className="columns">
                             <div className="column is-9">
                                 <div className="content">
-                                    <h3 className="title is-3">LMAX Disruptor Pattern</h3>
+                                    <h3 className="title has-text-black is-3">LMAX Disruptor Pattern</h3>
                                     <p>
                                         SARYA applies LMAX Disruptor pattern in order to improve
                                         multi-threading application throughout by reducing
                                         thread context switching and less thread locking.
                                 </p>
-                                    <figure className="image is-16by9">
-                                        <img src="http://placehold.it/800x450" alt="DPDK" />
+                                    <figure className="image">
+                                        <img src="./assets/webpage/technology/LMAX_DISRUPTOR.png" alt="LAMX Disruptor Pattern" />
                                     </figure>
                                     <ul className="is-size-6 pull-right">
                                         <li>NIC driver runs in App’s user mode to avoid context switch and packet copy</li>

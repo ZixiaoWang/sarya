@@ -25,7 +25,7 @@ export class ManualTradingPage extends Component {
                             <div className="columns">
                                 <div className="column is-9">
                                     <div className="content">
-                                        <h3 className="title is-3">Manual Trading</h3>
+                                        <h3 className="title has-text-black is-3">Manual Trading</h3>
                                         <p>
                                             Our trading solution is specially designed to fully 
                                             match prop traders’ expectations. The traders 
@@ -33,8 +33,8 @@ export class ManualTradingPage extends Component {
                                             different trading widgets to multiple screens and 
                                             pin the ones always on top for close monitoring.
                                         </p>
-                                        <figure className="image is-4by3">
-                                            <img src="http://placehold.it/400x300" alt="placeholder"/>
+                                        <figure className="image">
+                                            <img src="./assets/webpage/layout.png" alt="Layout"/>
                                         </figure>
                                         <p>
                                             For keyboard-only traders, shortcuts are fully customizable 
@@ -44,8 +44,8 @@ export class ManualTradingPage extends Component {
                                             and PnL. Order input is just 2 key stroks, BUY/SELL shortcut 
                                             and ENTER, the rest are all automatically filled with default.
                                         </p>
-                                        <figure className="image is-16by9">
-                                            <img src="http://placehold.it/1600x900" alt="placeholder"/>
+                                        <figure className="image">
+                                            <img src="./assets/webpage/order_entry.png" alt="Order Entry"/>
                                         </figure>
                                         <p>
                                             The orders sent from the order entry widget are possible to be 

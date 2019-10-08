@@ -25,14 +25,14 @@ export class MarketMakingPage extends Component {
                             <div className="columns">
                                 <div className="column is-9">
                                     <div className="content">
-                                        <h3 className="title is-3">Market Connectivity</h3>
+                                        <h3 className="title has-text-black is-3">Market Connectivity</h3>
                                         <p>
                                             Market Making view is integrated with market making, 
                                             underlying, order entry, market depth, public trades, 
                                             pricing and order view. The market maker is offered some key features,
                                         </p>
-                                        <figure className="image is-16by9">
-                                            <img src="http://placehold.it/1600x900" alt="image"/>
+                                        <figure className="image">
+                                            <img src="./assets/webpage/market_making.png" alt="Market Making"/>
                                         </figure>
                                         <p>
                                             <strong>Quote Instrument Types: </strong>

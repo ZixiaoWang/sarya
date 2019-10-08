@@ -3,7 +3,7 @@ import { Link } from 'preact-router';
 
 export class ProductPage extends Component {
     render() {
-        const backgroundImage: string = 'url(http://placehold.it/900x500)';
+        const backgroundImage: string = 'url(./assets/banner/product.banner.jpeg)';
 
         return (
             <Fragment>
@@ -12,7 +12,7 @@ export class ProductPage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <h3 className="title is-3">Products</h3>
+                                    <h3 className="title has-text-white is-3">Products</h3>
                                 </div>
                             </div>
                         </div>
@@ -22,7 +22,7 @@ export class ProductPage extends Component {
                     <div className="container">
                         <div className="columns is-multiline">
                             <div className="column is-9">
-                                <h5 className="title is-5">Market Connectivity</h5>
+                                <h5 className="title has-text-black is-5">Market Connectivity</h5>
                                 <p>
                                     Sarya Fintech has established market connections 
                                     with TFEX (Thailand Futures Exchange) and 
@@ -37,7 +37,7 @@ export class ProductPage extends Component {
                             </div>
                             <hr className="has-margin-vertical"/>
                             <div className="column is-9">
-                                <h5 className="title is-5">Manual Trading</h5>
+                                <h5 className="title has-text-black is-5">Manual Trading</h5>
                                 <p>
                                     Our trading solution is specially designed to 
                                     fully match prop traders’ expectations. The traders 
@@ -54,7 +54,7 @@ export class ProductPage extends Component {
                             </div>
                             <hr className="has-margin-vertical"/>
                             <div className="column is-9">
-                                <h5 className="title is-5">Market Making</h5>
+                                <h5 className="title has-text-black is-5">Market Making</h5>
                                 <p>
                                 Market Making view is integrated with market making, underlying, 
                                 order entry, market depth, public trades, 
@@ -70,7 +70,7 @@ export class ProductPage extends Component {
                             </div>
                             <hr className="has-margin-vertical"/>
                             <div className="column is-9">
-                                <h5 className="title is-5">Strategy Trading</h5>
+                                <h5 className="title has-text-black is-5">Strategy Trading</h5>
                                 <p>
                                     Our strategy trading....
                                 </p>

@@ -2,7 +2,7 @@ import { h, Component, Fragment } from 'preact';
 
 export class ContactPage extends Component {
     render() {
-        const backgroundImage: string = 'url(http://placehold.it/900x500)';
+        const backgroundImage: string = 'url(./assets/banner/contact.banner.jpeg)';
 
         return (
             <Fragment>
@@ -11,7 +11,7 @@ export class ContactPage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <h3 class="title is-3">Contact Us</h3>
+                                    <h3 class="title has-text-black is-3">Contact Us</h3>
                                 </div>
                             </div>
                         </div>

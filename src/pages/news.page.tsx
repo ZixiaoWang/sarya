@@ -2,7 +2,7 @@ import { h, Component, Fragment } from 'preact';
 
 export class NewsPage extends Component {
     render() {
-        const backgroundImage: string = 'url(http://placehold.it/900x500)';
+        const backgroundImage: string = 'url(./assets/banner/news.banner.jpeg)';
 
         return (
             <section className="hero is-medium sarya-banner" style={`background-image: ${ backgroundImage }`}>
@@ -10,7 +10,7 @@ export class NewsPage extends Component {
                     <div className="container">
                         <div className="columns">
                             <div className="column is-12">
-                                <h3 className="title is-3">News</h3>
+                                <h3 className="title has-text-black is-3">News</h3>
                             </div>
                         </div>
                     </div>

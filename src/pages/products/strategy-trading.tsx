@@ -25,7 +25,7 @@ export class StrategyTradingPage extends Component {
                             <div className="columns">
                                 <div className="column is-9">
                                     <div className="content">
-                                        <h3 className="title is-3">Strategy Trading</h3>
+                                        <h3 className="title has-text-black is-3">Strategy Trading</h3>
                                         <p>
                                             Coming soon...
                                         </p>
