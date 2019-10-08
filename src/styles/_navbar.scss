@@ -19,11 +19,18 @@
         & .navbar-link,
         & .navbar-item {
             color: $sarya-color;
+            &.is-active {
+                background-color: $sarya-color !important;
+                color: white !important;
+            }
         }
 
         & .navbar-link {
             &:after {
                 border-color: $sarya-color;
+            }
+            &.is-active:after {
+                border-color: white;
             }
         }
 

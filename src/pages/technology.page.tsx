@@ -32,13 +32,13 @@ export class TechnologyPage extends Component {
                                     <figure className="image is-16by9">
                                         <img src="http://placehold.it/800x450" alt="DPDK" />
                                     </figure>
-                                    <ol className="is-size-6">
+                                    <ul className="is-size-6">
                                         <li>NIC driver runs in App’s user mode to avoid context switch and packet copy</li>
                                         <li>DPDK uses Linux huge page for better memory alignment and less TLB cache miss to speed upmemory access</li>
                                         <li>DPDK uses ring data structure to avoid locks</li>
                                         <li>DPDK fast memory access using CPU local cache (L1, L2, L3) with NUMA processor architecture in mind.</li>
                                         <li>Thread-Binding to CPU core to avoid cached data and code copy</li>
-                                    </ol>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -59,13 +59,13 @@ export class TechnologyPage extends Component {
                                     <figure className="image is-16by9">
                                         <img src="http://placehold.it/800x450" alt="DPDK" />
                                     </figure>
-                                    <ol className="is-size-6 pull-right">
+                                    <ul className="is-size-6 pull-right">
                                         <li>NIC driver runs in App’s user mode to avoid context switch and packet copy</li>
                                         <li>DPDK uses Linux huge page for better memory alignment and less TLB cache miss to speed upmemory access</li>
                                         <li>DPDK uses ring data structure to avoid locks</li>
                                         <li>DPDK fast memory access using CPU local cache (L1, L2, L3) with NUMA processor architecture in mind.</li>
                                         <li>Thread-Binding to CPU core to avoid cached data and code copy</li>
-                                    </ol>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

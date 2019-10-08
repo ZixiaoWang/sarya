@@ -1,7 +1,9 @@
+@import './variables';
+
 .sarya {
     &-footer {
         width: 100%;
-        height: 45px;
+        height: $footer-height;
         display: flex;
         align-items: center;
 
