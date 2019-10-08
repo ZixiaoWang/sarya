@@ -54,7 +54,7 @@ export class NavbarComponent extends Component<any, any> {
                         <div className="navbar-brand">
                             <div className="navbar-item">
                                 <Link href="/">
-                                    <img src="./assets/images/sarya_logo.png" alt="Sarya Fintech" />
+                                    <img src="./assets/images/sarya_logo.png" alt="Sarya Finsoft" />
                                 </Link>
                             </div>
                             <div className="navbar-item">

@@ -24,7 +24,7 @@ export class ProductPage extends Component {
                             <div className="column is-9">
                                 <h5 className="title has-text-black is-5">Market Connectivity</h5>
                                 <p>
-                                    Sarya Fintech has established market connections 
+                                    Sarya Finsoft has established market connections 
                                     with TFEX (Thailand Futures Exchange) and 
                                     SET (The Stock Exchange Of Thailand)...
                                 </p>

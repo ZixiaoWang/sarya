@@ -10,7 +10,7 @@ export class HomePage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <h1 className="title has-text-black is-1 sarya-banner-title">Sarya Fintech</h1>
+                                    <h1 className="title has-text-black is-1 sarya-banner-title">Sarya Finsoft</h1>
                                 </div>
                             </div>
                         </div>
