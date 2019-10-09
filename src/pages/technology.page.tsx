@@ -11,7 +11,7 @@ export class TechnologyPage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <h3 className="title has-text-black is-3">Technology</h3>
+                                    <h3 className="title sarya-banner-title is-3">Technology</h3>
                                 </div>
                             </div>
                         </div>

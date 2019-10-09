@@ -11,7 +11,7 @@ export class ContactPage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <h3 class="title has-text-black is-3">Contact Us</h3>
+                                    <h3 class="title sarya-banner-title is-3">Contact Us</h3>
                                 </div>
                             </div>
                         </div>

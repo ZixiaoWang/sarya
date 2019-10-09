@@ -12,7 +12,7 @@ export class ProductPage extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-12">
-                                    <h3 className="title has-text-white is-3">Products</h3>
+                                    <h3 className="title sarya-banner-title is-3">Products</h3>
                                 </div>
                             </div>
                         </div>

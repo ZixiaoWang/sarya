@@ -3,5 +3,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        &-title {
+            color: black;
+            text-shadow: 0px 0px 4px white;
+        }
     }
 }
