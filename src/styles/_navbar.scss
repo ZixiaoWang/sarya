@@ -10,6 +10,15 @@
                 align-items: center;
             }
         }
+
+        & .navbar-item {
+            &.is-large {
+                padding: 0rem .75rem;
+                & img {
+                    max-height: 2.75rem;
+                }
+            }
+        }
     }
 
     &-subnavbar {
