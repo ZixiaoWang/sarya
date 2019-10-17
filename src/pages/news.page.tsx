@@ -32,14 +32,14 @@ export class NewsPage extends Component {
                                                 <p className="subtitle is-6">September, 2019</p>
                                                 <hr/>
                                                 <p>
-                                                    Sarya has partnered with Ausiris Futures Co (Ausiris), 
-                                                    Thailand’s top gold futures broker to build Algo Strategy 
+                                                    Sarya has partnered with Ausiris Co., Ltd. (Ausiris), 
+                                                    Thailand’s top gold bullion house to build Algo Strategy 
                                                     Trading component for TFEX (Thailand Futures Exchange). 
                                                 </p>
                                                 <p>
                                                     Sarya will leverage YAS Pro Trader Programme Trading Workstations 
-                                                    for Ausiris to build tailor-made prop trading tools to 
-                                                    in active market making empowered by data analytics. Future 
+                                                    for Ausiris to build tailor-made prop trading tools for 
+                                                    active market making empowered by data analytics. Future 
                                                     projects also include building Next-generation Trading Platform 
                                                     using Heterogeneous Computing and Machine Learning.
                                                 </p>
@@ -86,13 +86,13 @@ export class NewsPage extends Component {
                                         <div className="media-content">
                                             <div className="content">
                                                 <p className="title has-text-black is-4">
-                                                    Sarya has passed passed the complete conformation test of TFEX (Thailand Futures Exchange)
+                                                    Sarya has passed the complete confirmation test of TFEX (Thailand Futures Exchange)
                                                 </p>
                                                 <p className="subtitle is-6">April, 2019</p>
                                                 <hr/>
                                                 <p>
                                                     Sarya is proud to announce that we have passed the
-                                                    complete conformation test of TFEX (Thailand Futures Exchange).
+                                                    complete confirmation test of TFEX (Thailand Futures Exchange).
                                                 </p>
                                                 <p>
                                                     The conformance test certified us to be able to perform manual
