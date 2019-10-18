@@ -27,7 +27,7 @@ export class NewsPage extends Component {
                                         <div className="media-content">
                                             <div className="content">
                                                 <p className="title has-text-black is-4">
-                                                    Partnership with Ausiris Futures for building Algo Strategy Trading component for TFEX
+                                                    Partnership with Ausiris Co., Ltd for building Algo Strategy Trading component for TFEX
                                                 </p>
                                                 <p className="subtitle is-6">September, 2019</p>
                                                 <hr/>

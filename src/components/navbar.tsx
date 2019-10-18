@@ -61,14 +61,14 @@ export class NavbarComponent extends Component<any, any> {
                                 <strong className="is-bold has-sarya-color">TRADING WITH AN EDGE</strong>
                             </div>
                             <div className="navbar-burger">
-                                <button className="button" onClick={ this.toggleSubnav }>
+                                <button className="button has-sarya-bgcolor" onClick={ this.toggleSubnav }>
                                     {
                                         this.state.isSubnavOpen === false &&
-                                        <i className="ion ion-md-menu has-sarya-color"></i>
+                                        <i className="ion ion-md-menu has-text-white"></i>
                                     }
                                     {
                                         this.state.isSubnavOpen &&
-                                        <i className="ion ion-md-close has-sarya-color"></i>
+                                        <i className="ion ion-md-close has-text-white"></i>
                                     }
                                 </button>
                             </div>
