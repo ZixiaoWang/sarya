@@ -86,13 +86,13 @@ export class NewsPage extends Component {
                                         <div className="media-content">
                                             <div className="content">
                                                 <p className="title has-text-black is-4">
-                                                    Sarya has passed the complete confirmation test of TFEX (Thailand Futures Exchange)
+                                                    Sarya has passed the complete conformance test of TFEX (Thailand Futures Exchange)
                                                 </p>
                                                 <p className="subtitle is-6">April, 2019</p>
                                                 <hr/>
                                                 <p>
                                                     Sarya is proud to announce that we have passed the
-                                                    complete confirmation test of TFEX (Thailand Futures Exchange).
+                                                    complete conformance test of TFEX (Thailand Futures Exchange).
                                                 </p>
                                                 <p>
                                                     The conformance test certified us to be able to perform manual
