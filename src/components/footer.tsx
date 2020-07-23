@@ -33,7 +33,7 @@ export class FooterComponent extends Component {
                         <div className="columns">
                             <div className="column is-12">
                                 <div className="has-text-centered is-size-7">
-                                    <small>Copyright @ 2019 Sarya Finsoft Co.,Ltd.</small><br />
+                                    <small>Copyright @ 2020 Sarya Finsoft Co.,Ltd.</small><br />
                                     <small>All Rights Reserved.</small>
                                 </div>
                             </div>

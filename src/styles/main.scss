@@ -17,6 +17,8 @@ a { color: $sarya-color; }
 
 .sarya {
     padding-bottom: $footer-height;
+    min-height: 100%;
+    position: relative;
 
     &-has-navbar-fixed-top {
         padding-top: $navbar-height !important;
