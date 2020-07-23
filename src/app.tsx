@@ -3,8 +3,8 @@ import { Router } from 'preact-router';
 import { createHashHistory } from 'history';
 
 import { NavbarComponent, FooterComponent } from './components';
-import { 
-    HomePage, 
+import {
+    HomePage,
     TechnologyPage,
     ProductPage,
     NewsPage,
@@ -30,26 +30,28 @@ export class App extends Component {
             url: e.url
         })
     }
-    
-    render (props: any) {
+
+    render(props: any) {
         const history = createHashHistory();
         return (
             <Fragment>
-                <NavbarComponent url={ this.state.url }/>
-                <Router history={history} onChange={ this.onRouterChange }>
-                    <HomePage path="/" />
-                    <TechnologyPage path="/technology" />
-                    <ProductPage path="/product" />
-                    <ManualTradingPage path="/product/manual-trading" />
-                    <MarketConnectivityPage path="/product/market-connectivity" />
-                    <MarketMakingPage path="/product/market-making" />
-                    <StrategyTradingPage path="/product/strategy-trading" />
-                    <NewsPage path="/news" />
-                    <ContactPage path="/contact" />
-                    <Page404 default />
-                </Router>
+                <div>
+                    <Router history={history} onChange={this.onRouterChange}>
+                        <HomePage path="/" />
+                        <TechnologyPage path="/technology" />
+                        <ProductPage path="/product" />
+                        <ManualTradingPage path="/product/manual-trading" />
+                        <MarketConnectivityPage path="/product/market-connectivity" />
+                        <MarketMakingPage path="/product/market-making" />
+                        <StrategyTradingPage path="/product/strategy-trading" />
+                        <NewsPage path="/news" />
+                        <ContactPage path="/contact" />
+                        <Page404 default />
+                    </Router>
+                </div>
                 <FooterComponent />
+                <NavbarComponent url={this.state.url} />
             </Fragment>
-        ) 
+        )
     }
 }

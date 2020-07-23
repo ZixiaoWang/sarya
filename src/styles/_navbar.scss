@@ -8,6 +8,11 @@ $navbar-padding: ($navbar-height - 3.25rem) / 2;
         padding-top: $navbar-padding;
         padding-bottom: $navbar-padding;
         box-shadow: 0px 4px 4px rgba(0,0,0, 0.2);
+
+        &-dropdown {
+            border-radius: none;
+        }
+        
         @media screen and (max-width: 1023px) {
             & .navbar-burger {
                 display: flex;

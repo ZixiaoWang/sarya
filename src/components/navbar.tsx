@@ -38,7 +38,7 @@ class NavbarItems extends Component<any, any> {
                         <i className="ion ion-md-trending-up has-gap"></i>
                         <span className="has-gap">Products</span>
                     </ActiveLink>
-                    <div class="navbar-dropdown has-borderless">
+                    <div class="navbar-dropdown sarya-navbar-dropdown has-borderless">
                         <ActiveLink active={url === '/product/market-connectivity'} className="navbar-item" href="/product/market-connectivity">Market Connectivity</ActiveLink>
                         <ActiveLink active={url === '/product/manual-trading'} className="navbar-item" href="/product/manual-trading">Manual Trading</ActiveLink>
                         <ActiveLink active={url === '/product/market-making'} className="navbar-item" href="/product/market-making">Market Making</ActiveLink>
@@ -78,11 +78,11 @@ export class NavbarComponent extends Component<any, any> {
     }
 
     render() {
-        let subnavClassName = `navbar sarya-subnavbar`;
+        let classname = `navbar-menu sarya-subnavbar`;
         let url = this.props.url;
 
         if (this.state.isSubnavOpen) {
-            subnavClassName += ' is-open';
+            classname += ' is-open';
         }
 
         return (
@@ -111,7 +111,7 @@ export class NavbarComponent extends Component<any, any> {
                                 </button>
                             </div>
                         </div>
-                        <div className="navbar-menu sarya-subnavbar">
+                        <div className={classname}>
                             <div className="navbar-end">
                                 <NavbarItems url={url} />
                             </div>

@@ -10,6 +10,7 @@
 
 html, body {
     margin: 0px;
+    scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -19,6 +20,7 @@ a { color: $sarya-color; }
     padding-bottom: $footer-height;
     min-height: 100%;
     position: relative;
+    overflow: hidden;
 
     &-has-navbar-fixed-top {
         padding-top: $navbar-height !important;
@@ -29,6 +31,9 @@ a { color: $sarya-color; }
     }
 }
 
-@media screen and (max-width: 1023px) {
-
+@media screen and (max-width: 768px) {
+    .section {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
 }

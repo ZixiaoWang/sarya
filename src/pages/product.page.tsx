@@ -7,7 +7,7 @@ export class ProductPage extends Component {
 
         return (
             <Fragment>
-                <section className="hero is-medium sarya-banner" style={`background-image: ${ backgroundImage }`}>
+                <section className="hero is-medium sarya-banner" style={`background-image: ${backgroundImage}`}>
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
@@ -22,64 +22,75 @@ export class ProductPage extends Component {
                     <div className="container">
                         <div className="columns is-multiline">
                             <div className="column is-9">
-                                <h5 className="title has-text-black is-5">Market Connectivity</h5>
-                                <p>
-                                    Sarya Finsoft has established market connections 
-                                    with TFEX (Thailand Futures Exchange) and 
-                                    SET (The Stock Exchange Of Thailand)...
+                                <div className="sarya-card">
+                                    <h5 className="title has-text-black is-5">Market Connectivity</h5>
+                                    <p>
+                                        Sarya Finsoft has established market connections
+                                        with TFEX (Thailand Futures Exchange) and
+                                        SET (The Stock Exchange Of Thailand)...
                                 </p>
-                                <p>
-                                    <Link href="/product/market-connectivity">
-                                        <span className="has-gap">Read more</span>
-                                        <i className="ion ion-md-arrow-right has-gap"></i>
-                                    </Link>
-                                </p>
+                                    <p>
+                                        <Link href="/product/market-connectivity">
+                                            <span className="has-gap">Read more</span>
+                                            <i className="ion ion-md-arrow-right has-gap"></i>
+                                        </Link>
+                                    </p>
+                                </div>
                             </div>
-                            <hr className="has-margin-vertical"/>
+                        </div>
+                        <div className="columns">
                             <div className="column is-9">
-                                <h5 className="title has-text-black is-5">Manual Trading</h5>
-                                <p>
-                                    Our trading solution is specially designed to 
-                                    fully match prop traders’ expectations. The traders 
-                                    can design their own trading workspace by moving 
-                                    different trading widgets to multiple screens and 
-                                    pin the ones always on top for close monitoring...
+                                <div className="sarya-card">
+                                    <h5 className="title has-text-black is-5">Manual Trading</h5>
+                                    <p>
+                                        Our trading solution is specially designed to
+                                        fully match prop traders’ expectations. The traders
+                                        can design their own trading workspace by moving
+                                        different trading widgets to multiple screens and
+                                        pin the ones always on top for close monitoring...
                                 </p>
-                                <p>
-                                    <Link href="/product/manual-trading">
-                                        <span className="has-gap">Read more</span>
-                                        <i className="ion ion-md-arrow-right has-gap"></i>
-                                    </Link>
-                                </p>
+                                    <p>
+                                        <Link href="/product/manual-trading">
+                                            <span className="has-gap">Read more</span>
+                                            <i className="ion ion-md-arrow-right has-gap"></i>
+                                        </Link>
+                                    </p>
+                                </div>
                             </div>
-                            <hr className="has-margin-vertical"/>
+                        </div>
+                        <div className="columns">
                             <div className="column is-9">
-                                <h5 className="title has-text-black is-5">Market Making</h5>
-                                <p>
-                                Market Making view is integrated with market making, underlying, 
-                                order entry, market depth, public trades, 
-                                pricing and order view. The market maker is 
-                                offered some key features...
+                                <div className="sarya-card">
+                                    <h5 className="title has-text-black is-5">Market Making</h5>
+                                    <p>
+                                        Market Making view is integrated with market making, underlying,
+                                        order entry, market depth, public trades,
+                                        pricing and order view. The market maker is
+                                        offered some key features...
                                 </p>
-                                <p>
-                                    <Link href="/product/market-making">
-                                        <span className="has-gap">Read more</span>
-                                        <i className="ion ion-md-arrow-right has-gap"></i>
-                                    </Link>
-                                </p>
+                                    <p>
+                                        <Link href="/product/market-making">
+                                            <span className="has-gap">Read more</span>
+                                            <i className="ion ion-md-arrow-right has-gap"></i>
+                                        </Link>
+                                    </p>
+                                </div>
                             </div>
-                            <hr className="has-margin-vertical"/>
+                        </div>
+                        <div className="columns">
                             <div className="column is-9">
-                                <h5 className="title has-text-black is-5">Strategy Trading</h5>
-                                <p>
-                                    Our strategy trading....
+                                <div className="sarya-card">
+                                    <h5 className="title has-text-black is-5">Strategy Trading</h5>
+                                    <p>
+                                        Our strategy trading....
                                 </p>
-                                <p>
-                                    <Link href="/product/strategy-trading">
-                                        <span className="has-gap">Read more</span>
-                                        <i className="ion ion-md-arrow-right has-gap"></i>
-                                    </Link>
-                                </p>
+                                    <p>
+                                        <Link href="/product/strategy-trading">
+                                            <span className="has-gap">Read more</span>
+                                            <i className="ion ion-md-arrow-right has-gap"></i>
+                                        </Link>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

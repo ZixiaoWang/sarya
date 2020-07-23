@@ -8,16 +8,20 @@ module.exports = () => {
     return {
         entry: './main.tsx',
         output: {
-            filename: 'index.min.js',
-            path: path.resolve(__dirname, '.')
+            filename: '[hash].min.js',
+            path: path.resolve(__dirname, './dist')
         },
         module: {
             rules: [
-                { test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
+                {
+                    test: /\.tsx?$/,
+                    use: 'ts-loader',
+                    exclude: /node_modules/
+                },
                 {
                     test: /\.scss?$/,
                     use: [
-                        'style-loader',
+                        { loader: MiniCSSExtractPlugin.loader },
                         'css-loader',
                         { loader: 'sass-loader', options: { sourceMap: false } }
                     ],
@@ -33,13 +37,18 @@ module.exports = () => {
             }
         },
         plugins: [
+            new CleanWebpackPlugin(),
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, './src/template.html'),
-                filename: './index.html',
+                filename: '../index.html',
                 inlineSource: '.(js|css)$',
-                title: 'Sarya Fintech'
+                title: 'Sarya Fintech',
+                minify: true
             }),
-            new HtmlWebpackInlineSourcePlugin()
+            new MiniCSSExtractPlugin({
+                filename: 'name.[hash].css'
+            })
+            // new HtmlWebpackInlineSourcePlugin()
         ],
         target: 'web',
         optimization: {
