@@ -12,7 +12,7 @@ $navbar-padding: ($navbar-height - 3.25rem) / 2;
         &-dropdown {
             border-radius: none;
         }
-        
+
         @media screen and (max-width: 1023px) {
             & .navbar-burger {
                 display: flex;
@@ -78,7 +78,7 @@ $navbar-padding: ($navbar-height - 3.25rem) / 2;
             &-subnavbar {
                 display: none;
                 position: fixed;
-                top: 52px;
+                top: $navbar-height;
                 left: 0px;
                 width: 100%;
 
