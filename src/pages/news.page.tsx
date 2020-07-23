@@ -21,8 +21,7 @@ export class NewsPage extends Component {
                     <div className="container">
                         <div className="columns">
                             <div className="column is-9">
-
-                                <div className="box">
+                                <div className="sarya-card">
                                     <article className="media">
                                         <div className="media-content">
                                             <div className="content">
@@ -30,25 +29,28 @@ export class NewsPage extends Component {
                                                     Partnership with Ausiris Co., Ltd for building Algo Strategy Trading component for TFEX
                                                 </p>
                                                 <p className="subtitle is-6">September, 2019</p>
-                                                <hr/>
+                                                <hr />
                                                 <p>
-                                                    Sarya has partnered with Ausiris Co., Ltd. (Ausiris), 
-                                                    Thailand’s top gold bullion house to build Algo Strategy 
-                                                    Trading component for TFEX (Thailand Futures Exchange). 
+                                                    Sarya has partnered with Ausiris Co., Ltd. (Ausiris),
+                                                    Thailand’s top gold bullion house to build Algo Strategy
+                                                    Trading component for TFEX (Thailand Futures Exchange).
                                                 </p>
                                                 <p>
-                                                    Sarya will leverage YAS Pro Trader Programme Trading Workstations 
-                                                    for Ausiris to build tailor-made prop trading tools for 
-                                                    active market making empowered by data analytics. Future 
-                                                    projects also include building Next-generation Trading Platform 
+                                                    Sarya will leverage YAS Pro Trader Programme Trading Workstations
+                                                    for Ausiris to build tailor-made prop trading tools for
+                                                    active market making empowered by data analytics. Future
+                                                    projects also include building Next-generation Trading Platform
                                                     using Heterogeneous Computing and Machine Learning.
                                                 </p>
                                             </div>
                                         </div>
                                     </article>
                                 </div>
-
-                                <div className="box">
+                            </div>
+                        </div>
+                        <div className="columns">
+                            <div className="column is-9">
+                                <div className="sarya-card">
                                     <article className="media">
                                         <div className="media-content">
                                             <div className="content">
@@ -56,32 +58,35 @@ export class NewsPage extends Component {
                                                     Partnership with Classic Ausiris for the Next-generation Professional Trading Platform.
                                                 </p>
                                                 <p className="subtitle is-6">July 1st, 2019</p>
-                                                <hr/>
+                                                <hr />
                                                 <p>
-                                                    Sarya is happy to announce a partnership with Classic 
-                                                    Ausiris Investment Advisory Securities Co.,Ltd. (“CAF”) 
+                                                    Sarya is happy to announce a partnership with Classic
+                                                    Ausiris Investment Advisory Securities Co.,Ltd. (“CAF”)
                                                     for the Next-generation Professional Trading Platform.
                                                 </p>
                                                 <p>
-                                                    Sarya will provide Classic Ausiris, who is member of 
-                                                    Thailand Futures Exchange (TFEX), and one of the top 
-                                                    futures brokers in Thailand, tailor-made solutions 
-                                                    including YAS TFEX Connectivity, Market Data and Order 
-                                                    Sending connectivity to TFEX, and YAS Market Making 
-                                                    workstations for Futures and Options. 
+                                                    Sarya will provide Classic Ausiris, who is member of
+                                                    Thailand Futures Exchange (TFEX), and one of the top
+                                                    futures brokers in Thailand, tailor-made solutions
+                                                    including YAS TFEX Connectivity, Market Data and Order
+                                                    Sending connectivity to TFEX, and YAS Market Making
+                                                    workstations for Futures and Options.
                                                 </p>
                                                 <p>
-                                                    This partnership is another important step for Sarya 
-                                                    towards our goal of being the best technological partner 
-                                                    for professional traders with our proven superior execution 
+                                                    This partnership is another important step for Sarya
+                                                    towards our goal of being the best technological partner
+                                                    for professional traders with our proven superior execution
                                                     capability to capture market opportunity by low-latency market access.
                                                 </p>
                                             </div>
                                         </div>
                                     </article>
                                 </div>
-
-                                <div className="box">
+                            </div>
+                        </div>
+                        <div className="columns">
+                            <div className="column is-9">
+                                <div className="sarya-card">
                                     <article className="media">
                                         <div className="media-content">
                                             <div className="content">
@@ -89,7 +94,7 @@ export class NewsPage extends Component {
                                                     Sarya has passed the complete conformance test of TFEX (Thailand Futures Exchange)
                                                 </p>
                                                 <p className="subtitle is-6">April, 2019</p>
-                                                <hr/>
+                                                <hr />
                                                 <p>
                                                     Sarya is proud to announce that we have passed the
                                                     complete conformance test of TFEX (Thailand Futures Exchange).
@@ -104,12 +109,11 @@ export class NewsPage extends Component {
                                         </div>
                                     </article>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-                </section>
-            </Fragment>
+                </section >
+            </Fragment >
         )
     }
 }

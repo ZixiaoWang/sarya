@@ -1,6 +1,10 @@
 @import './variables';
 
 .sarya {
+    &-sitemap {
+        background-color: #666666;
+        color: #eeeeee;
+    }
     &-footer {
         width: 100%;
         height: $footer-height;
@@ -11,7 +15,7 @@
         left: 0px;
         bottom: 0px;
 
-        box-shadow: inset 0px 4px 4px black;
+        // box-shadow: inset 0px 4px 4px black;
         background-color: #333333;
         color: #eeeeee;
     }
