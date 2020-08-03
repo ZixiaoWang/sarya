@@ -2,7 +2,7 @@ import { h, Component, Fragment } from 'preact';
 
 export class HomePage extends Component {
     render() {
-        const backgroundImage: string = 'url(./assets/banner/home.banner.jpeg)';
+        const backgroundImage: string = 'url(./assets/banner/banner-1.jpg)';
         return (
             <Fragment>
                 <section className="hero is-medium sarya-banner" style={`background-image: ${backgroundImage}`}>

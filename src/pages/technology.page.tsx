@@ -2,7 +2,7 @@ import { h, Component, Fragment } from 'preact';
 
 export class TechnologyPage extends Component {
     render() {
-        const backgroundImage: string = 'url(./assets/banner/technology.banner.jpeg)';
+        const backgroundImage: string = 'url(./assets/banner/banner-2.jpg)';
 
         return (
             <Fragment>

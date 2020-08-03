@@ -3,7 +3,7 @@ import { Link } from 'preact-router';
 
 export class ProductPage extends Component {
     render() {
-        const backgroundImage: string = 'url(./assets/banner/product.banner.jpeg)';
+        const backgroundImage: string = 'url(./assets/banner/banner-3.jpg)';
 
         return (
             <Fragment>
