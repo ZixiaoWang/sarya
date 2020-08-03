@@ -25,9 +25,10 @@ export class MarketConnectivityPage extends Component {
                             <div className="columns">
                                 <div className="column is-9">
                                     <h3 className="title has-text-black is-3">Market Connectivity</h3>
-                                    <p>
-                                        Native Gateways
-                                    </p>
+                                    <ul>
+                                        <li>Native Gateways</li>
+                                        <li>Certified by CME Group for both iLink 2.x market access and MDP 3.0 market data</li>
+                                    </ul>
                                 </div>
                             </div>
                             <div className="columns">
@@ -35,7 +36,7 @@ export class MarketConnectivityPage extends Component {
                                     <div className="content">
                                         <label className="label">TFEX (Thailand Futures Exchange)</label>
                                         <ul>
-                                            <li>Certified since Feb 2019</li>
+                                            <li>Certified since 1 August 2020</li>
                                             <li>Native EMAPI</li>
                                             <li>Support all Order Types</li>
                                             <li>Page by Page Quoting</li>
