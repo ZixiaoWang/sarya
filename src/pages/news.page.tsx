@@ -26,6 +26,34 @@ export class NewsPage extends Component {
                                         <div className="media-content">
                                             <div className="content">
                                                 <p className="title has-text-black is-4">
+                                                    SARYA is proud to be certified by CME Group
+                                                </p>
+                                                <p className="subtitle is-6">July 22, 2020</p>
+                                                <hr />
+                                                <p>
+                                                    SARYA FINSOFT is proude to announce that the firm is certified by 
+                                                    CME Group for both iLink 2.x market access and MDP 3.0 market data.
+                                                </p>
+                                                <p>
+                                                    The certificate enables us to deliver very low-latency and stable 
+                                                    CME market data and trading opportunities to our clients in the 
+                                                    region. Especially, our current clients trading precious metals 
+                                                    are now immediately powered to COMEX with great trading functionality, 
+                                                    speed and stability.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="columns">
+                            <div className="column is-9">
+                                <div className="sarya-card">
+                                    <article className="media">
+                                        <div className="media-content">
+                                            <div className="content">
+                                                <p className="title has-text-black is-4">
                                                     Partnership with Ausiris Co., Ltd for building Algo Strategy Trading component for TFEX
                                                 </p>
                                                 <p className="subtitle is-6">September, 2019</p>
@@ -77,33 +105,6 @@ export class NewsPage extends Component {
                                                     towards our goal of being the best technological partner
                                                     for professional traders with our proven superior execution
                                                     capability to capture market opportunity by low-latency market access.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="columns">
-                            <div className="column is-9">
-                                <div className="sarya-card">
-                                    <article className="media">
-                                        <div className="media-content">
-                                            <div className="content">
-                                                <p className="title has-text-black is-4">
-                                                    Sarya has passed the complete conformance test of TFEX (Thailand Futures Exchange)
-                                                </p>
-                                                <p className="subtitle is-6">April, 2019</p>
-                                                <hr />
-                                                <p>
-                                                    Sarya is proud to announce that we have passed the
-                                                    complete conformance test of TFEX (Thailand Futures Exchange).
-                                                </p>
-                                                <p>
-                                                    The conformance test certified us to be able to perform manual
-                                                    trading, algo trading and market making across all types of
-                                                    products listed in TFEX such as SET50 Index options,
-                                                    Gold Futures, Rubber Futures, Interest Rate Futures, etc.
                                                 </p>
                                             </div>
                                         </div>
