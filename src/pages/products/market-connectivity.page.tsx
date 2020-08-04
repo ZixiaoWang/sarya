@@ -25,10 +25,19 @@ export class MarketConnectivityPage extends Component {
                             <div className="columns">
                                 <div className="column is-9">
                                     <h3 className="title has-text-black is-3">Market Connectivity</h3>
-                                    <ul>
-                                        <li>Native Gateways</li>
-                                        <li>Certified by CME Group for both iLink 2.x market access and MDP 3.0 market data</li>
-                                    </ul>
+                                    <p>
+                                        Native Gateways
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="columns">
+                                <div className="column is-12">
+                                    <div className="content">
+                                        <label className="label">CME Group</label>
+                                        <ul>
+                                            <li>Certified by CME Group for both iLink 2.x market access and MDP 3.0 market data</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div className="columns">
