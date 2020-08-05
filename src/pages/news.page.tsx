@@ -31,7 +31,7 @@ export class NewsPage extends Component {
                                                 <p className="subtitle is-6">July 22, 2020</p>
                                                 <hr />
                                                 <p>
-                                                    SARYA FINSOFT is proude to announce that the firm is certified by 
+                                                    SARYA FINSOFT is proud to announce that the firm is certified by 
                                                     CME Group for both iLink 2.x market access and MDP 3.0 market data.
                                                 </p>
                                                 <p>
